@@ -1,6 +1,6 @@
 # Диаграмма классов  
 
-![Диаграмма классов](diagrams/images/class_diagram.png) 
+![Диаграмма классов]([diagrams/images/class_diagram.png](https://github.com/oieblin/mobile_app_WordFlash/blob/main/diagrams/images/class_diagram.png)) 
 
 # Глоссарий
 
