@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="start"
+        android:contentDescription="Back"
+        android:text="Back"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/termEditText"
+        android:layout_width="386dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="136dp"
+        android:hint="Enter Term"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cancelButton" />
+
+    <Button
+        android:id="@+id/saveCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Save Card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/definitionEditText" />
+
+    <Button
+        android:id="@+id/deleteCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Delete Card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toEndOf="@+id/saveCardButton"
+        app:layout_constraintTop_toBottomOf="@+id/definitionEditText" />
+
+    <EditText
+        android:id="@+id/definitionEditText"
+        android:layout_width="386dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Definition"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/termEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

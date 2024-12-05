@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomepageActivity">
+
+    <TextView
+        android:id="@+id/myCollectionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="My Collections"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/addDeckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Deck"
+        app:layout_constraintBottom_toTopOf="@+id/navigationBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deckRecyclerView"
+        app:layout_constraintVertical_bias="0.828"
+        tools:ignore="DuplicateIds" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/deckRecyclerView"
+        android:layout_width="378dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/navigationBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myCollectionsTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/testingButton"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:text="T"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/statisticsButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/navigationBar"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/statisticsButton"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintTop_toBottomOf="@+id/navigationBar" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="16dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationBar"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:text="i"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
